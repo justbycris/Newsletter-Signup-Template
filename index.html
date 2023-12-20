@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - NR Newsletter Sign Up</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-----PAGE ICON----->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://nationalreview.com/wp-content/themes/national-review/static/images/favicons/favicon-32x32.png">
+</head>
+<body>
+    <!--NAV MENU-->
+    <div class="header">
+        <!-- LOGO IMG -->
+        <div class="logo">
+            <a href="https://www.nationalreview.com/" target="_blank">
+                <img src="https://www.nationalreview.com/wp-content/uploads/2023/12/NR_NewLogo_Horizontal_2022.png" class="logo">
+            </a>
+        </div>
+        <div class="nav">
+            <div class="menu"> 
+                <a href="https://www.nationalreview.com/donate/" target="_blank" id="donate-btn">DONATE</a>
+                <a href="https://www.nationalreview.com/corner/" target="_blank" id="thecorner-btn">THE CORNER</a>
+                <a href="https://www.nationalreview.com/subscribe" target="_blank" class="red-btn" id="subscribe-btn" style="margin-right: 0;">SUBSCRIBE</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    <!--HEADLINE-->
+    <h1>Subscribe to Our Free Newsletters</h1>
+    <span data-errormsg="email" class="error-message" id="error-mssg" >Invalid email</span><br>
+    <hr>
+    <!--FORM-->
+    <form method="post" id="newsletterForm">
+        <div class="nl-items"> 
+                <div class="item">
+                    <label for="vars[tmj_sub]" class="checkbox"> 
+                    <input type="hidden" name="vars[tmj_sub]" value="null">
+                    <input type="checkbox" name="vars[tmj_sub]"  id="vars[tmj_sub]" value="1" >
+                    <span class="checkmark"></span>
+                    </label>
+                        <div class="nl-description">
+                            <h3>THE MORNING JOLT</h3>
+                            <span class="frequency">Monday &#8212; Saturday</span>
+                            <p>Take a deep dive into the news and debates driving the day with NR&#39;s 
+                                senior political correspondent Jim Gerarghty.</p>
+                            <span class="nlpreview"><a href="https://www.nationalreview.com/mj-preview/" target="_blank">NON-MEMBER PREVIEW</a></span></br>
+                            <span class="nlpreview"><a href="https://www.nationalreview.com/mj-preview-nrplus-members/" target="_blank">MEMBER PREVIEW></a></span>
+                        </div>    
+                </div>
+                <div  class="item"> 
+                    <label for="vars[nd_sub]" class="checkbox">
+                    <input type="hidden" name="vars[nd_sub]" value="null">
+                    <input type="checkbox" name="vars[nd_sub]"  id="vars[nd_sub]" value="1" >
+                    <span class="checkmark"></span>
+                    </label>
+                        <div class="nl-description">
+                            <h3>NR DAILY</h3>
+                            <span class="frequency">Monday &#8212; Saturday</span>
+                            <p>End every day with a roundup of the best commentary from NR&#39;s writers.</p>
+                            <span class="nlpreview"><a href="https://www.nationalreview.com/nr-daily-preview/" target="_blank">PREVIEW></a></span>
+                        </div>
+                </div>
+                <div  class="item">
+                    <label for="vars[thr_sub]" class="checkbox"> 
+                        <input type="hidden" name="vars[thr_sub]" value="null">
+                        <input type="checkbox" name="vars[thr_sub]"  id="vars[thr_sub]" value="1" >
+                        <span class="checkmark"></span>
+                        </label>
+                        <div class="nl-description">
+                            <h3>THE HORSE RACE</h3>
+                            <span class="frequency">Weekly</span>
+                            <p>Get NR&#39;s latest reporting and analysis on upcoming elections sent straight to your inbox every week.</p>
+                            <span class="nlpreview"><a href="https://www.nationalreview.com/the-horse-race-preview/" target="_blank">NON-MEMBER PREVIEW></a></span></br>
+                            <span class="nlpreview"><a href="https://www.nationalreview.com/the-horse-race-preview-nrplus-members/" target="_blank">MEMBER PREVIEW></a></span>
+                        </div>
+                </div>
+                <div  class="item"> 
+                    <label for="vars[bnews_sub]" class="checkbox"> 
+                        <input type="hidden" name="vars[bnews_sub]" value="null">
+                        <input type="checkbox" name="vars[bnews_sub]"  id="vars[bnews_sub]" value="1" >
+                        <span class="checkmark"></span>
+                        </label>
+                        <div class="nl-description">
+                            <h3>BREAKING NEWS</h3>
+                            <span class="frequency">As the latest news break</span>
+                            <p>Never miss a beat. Get alerts about major news from around the world.</p>
+                            <span class="nlpreview"><a href="https://www.nationalreview.com/bn-preview/" target="_blank">PREVIEW></a></span>
+                        </div>
+                </div>
+                <div  class="item">
+                    <label for="vars[wr_sub]" class="checkbox"> 
+                        <input type="hidden" name="vars[wr_sub]" value="null">
+                        <input type="checkbox" name="vars[wr_sub]" id="vars[wr_sub]" value="1" >
+                        <span class="checkmark"></span>
+                        </label>
+                        <div class="nl-description">
+                            <h3>WEEK IN REVIEW</h3>
+                            <span class="frequency">Every Sunday</span>
+                            <p>Catch up once a week on the biggest NR stories you might have missed.</p>
+                            <span class="nlpreview"><a href="https://www.nationalreview.com/wik-preview/" target="_blank">PREVIEW></a></span>
+                        </div>
+                </div>
+                <div  class="item">
+                    <label for="vars[cl_sub]" class="checkbox"> 
+                        <input type="hidden" name="vars[cl_sub]" value="null">
+                        <input type="checkbox" name="vars[cl_sub]"  id="vars[cl_sub]" value="1" >
+                        <span class="checkmark"></span>
+                        </label>
+                        <div class="nl-description">
+                            <h3>THE CAPITAL LETTER</h3>
+                            <span class="frequency">Every Friday</span>
+                            <p>A weekly digest on finance, business, and economics from an NR sensibility.</p>
+                            <span class="nlpreview"><a href="https://www.nationalreview.com/tcl-preview-non-subs/" target="_blank">NON-MEMBER PREVIEW></a></span></br>
+                            <span class="nlpreview"><a href="https://www.nationalreview.com/the-capital-letter-nrplus-member-preview/" target="_blank">MEMBER PREVIEW></a></span>
+                        </div>
+                </div>
+                <div  class="item">
+                    <label for="vars[tw_sub]" class="checkbox"> 
+                        <input type="hidden" name="vars[tw_sub]" value="null">
+                        <input type="checkbox" name="vars[tw_sub]"  id="vars[tw_sub]" value="1" >
+                        <span class="checkmark"></span>
+                        </label>
+                        <div class="nl-description">
+                            <h3>THE WEEK</h3>
+                            <span class="frequency">Monday &#8212; Saturday</span>
+                            <p>National Review&#39;s popular digest of current events, brought to you by the NR Editors.</p>
+                        </div>
+                </div>
+                <div  class="item">
+                    <label for="vars[alerts_sub]" class="checkbox"> 
+                        <input type="hidden" name="vars[alerts_sub]" value="null">
+                        <input type="checkbox" name="vars[alerts_sub]"  id="vars[alerts_sub]" value="1">
+                        <span class="checkmark"></span>
+                        </label>
+                        <div class="nl-description">
+                            <h3>NEW ISSUE ALERTS</h3>
+                            <span class="frequency">Monday &#8212; Saturday</span>
+                            <p>Be the first to know when new issues of National Review are available.</p>
+                        </div>
+                </div>
+                <div  class="item"> 
+                    <label for="vars[pd_sub]" class="checkbox">
+                        <input type="hidden" name="vars[pd_sub]" value="null">
+                        <input type="checkbox" name="vars[pd_sub]"   id="vars[pd_sub]" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                        <div class="nl-description">
+                            <h3>PARTNER DEALS</h3>
+                            <span class="frequency">Weekly</span>
+                            <p>Get special updates and offers from NR partners and sponsors.</p>
+                        </div>
+                </div>
+            </div>
+        <!--CONTAINER WITH SUBMIT BUTTON AND NUMBER OF SELECTED NEWSLETTERS-->
+        <div class="submit-container" id="submit-container">
+                <div class="submit-text">
+                    <h2><span id="count-nl"></span> Selected Newsletters </h2>
+                    <p>Enter your email and click "Sign Up" to start receiving newsletters.</p> 
+                </div> 
+                <div class="submit-btn">
+                    <div class="email-box">
+                        <!--EMAIL ADDRESS INPUT-->
+                        <input name="email" type="text" placeholder="Email Address" class="email-input" data-validation="required email" id="emailInput" required/><br>
+                        <!--SUBMIT BUTTON-->
+                        <input type="submit" value="SIGN UP" name="submit" class="btn"/>  
+                    </div>
+                    <!--PRIVACY POLICY-->
+                    <div class="privacy">
+                        <a href="https://www.nationalreview.com/privacy-policy/" style="text-decoration: none; color: #CCC;">National Review Privacy Policy</a>
+                    </div>
+
+                </div>  
+            </div> 
+    </div>
+    </form>
+    </div>
+    <script src="app.js"></script>
+    </body>
+    </html>
